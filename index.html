@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content=""
+	> <meta name="author" content="Aman Kumar"> 
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<title>SmartServ Task 2</title> 
+</head> 
+<body> 
+	<p class="title">Import Products</p> 
+	<div class="main"> <div class="step"> 
+		<div class="name">Step 1:</div> 
+		<div class="step-main">
+		 <p>Selecte File </p> 
+		 <input id="file" type="file"> 
+		 <p>Supported File Types(s): .CSV, .JSON</p> 
+		</div> </div> <div class="step"> 
+			<div class="name">Step 2:</div> 
+			<div class="step-main"> 
+				<p>Specify Format</p> <form action=""> 
+					<div> <label for="fileType">File Type</label>
+						<select name="fileType"> 
+							<option value="json">json</option> 
+							<option value="csv">csv</option> 
+						</select> 
+						</div> 
+						<div> 
+							<label for="charEncoding">Character Encoding</label> 
+							<select name="charEncoding"> 
+								<option value="utf-8">UTF-8</option> 
+								<option value="utf-16">UTF-16</option> 
+								<option value="utf-32">UTF-32</option> 
+							</select> 
+						</div> 
+						<div> 
+							<label for="delimiter">Delimiter</label> 
+							<select name="delimiter"> 
+								<option value="comma">comma</option> 
+								<option value="space">space</option> 
+							</select> 
+						</div> 
+						<div> 
+							<label for="header">Has Header </label> 
+							<input type="checkbox" name="header" checked> 
+						</div> 
+					</form> 
+				</div> 
+			</div> 
+		</div> 
+		<div class="step" id="step3"> 
+			<div class="name"> <input type="checkbox" name="Step" checked>
+				<label for="Step">Step 3:</label> 
+			</div> 
+				<div class="step-main">
+				 <p>Display Handling </p> 
+				 <p>Select the field to be displayed</p> 
+				 <div class="field-box"> <div class="available-fields"> 
+				 	<div class="field-title">Available Fields</div> 
+				 	<div class="field"> 
+				 	</div> 
+				 </div> 
+				 <div class="field-button"> 
+				 	<button class="add">>> </button> 
+				 	<button class="remove"> <<</button> 
+				 </div> 
+				 <div class="display-fields"> 
+				 	<div class="field-title">Fields to be Displayed</div> 
+				 	<div class="field"> 
+				 	</div> 
+				 </div> 
+				</div> 
+			</div> 
+		</div> 
+		<div class="buttons">
+		 <button class="next">Next </button> 
+		 <button class="cancel">Cancel </button> 
+		</div> 
+		<div class="table"> 
+			<div class="table-header"> </div> 
+			<div class="table-content"> </div> 
+		</div> 
+	</body> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="main.js"> </script> 
+	</html>
